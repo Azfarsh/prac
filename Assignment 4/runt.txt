@@ -1,0 +1,5 @@
+# Compile the Java program
+javac TokenRing.java
+
+# Run the Token Ring program
+java TokenRing
