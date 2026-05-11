@@ -1,0 +1,11 @@
+# Compile all Java files
+javac *.java
+
+# Start RMI Registry
+rmiregistry
+
+# Open new CMD and run server
+java Server
+
+# Open another CMD and run client
+java Client
