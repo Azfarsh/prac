@@ -1,0 +1,5 @@
+# Compile the Java program
+javac RingAlgorithm.java
+
+# Run the Ring Algorithm program
+java RingAlgorithm
