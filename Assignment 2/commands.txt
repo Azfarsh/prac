@@ -1,13 +1,14 @@
-Server:
-
+# Generate Stub and Skeleton files
 idlj -fall ReverseModule.idl
-javac *.java ReverseModule/*.java
-orbd -ORBInitialPort 1050&
-java ReverseServer -ORBInitialPort 1050& -ORBInitialHost localhost&
 
-Client:
+# Compile all Java files
+javac *.java ReverseModule\*.java
 
-java ReverseClient -ORBInitialPort 1050 -ORBInitialHost localhost&
+# Start ORBD service
+orbd -ORBInitialPort 1050
 
-// enter string
-//result will be Reverse String
+# Open new CMD and run server
+java ReverseServer -ORBInitialPort 1050 -ORBInitialHost localhost
+
+# Open another CMD and run client
+java ReverseClient -ORBInitialPort 1050 -ORBInitialHost localhost
