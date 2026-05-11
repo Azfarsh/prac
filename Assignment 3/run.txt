@@ -1,0 +1,5 @@
+# Compile the Java program
+javac Berkeley.java
+
+# Run the Berkeley Algorithm program
+java Berkeley
